@@ -1,5 +1,7 @@
 # Kubelet Volume Stats Exporter
 
+> A hard fork of: https://github.com/vbeaucha/kubelet-volume-stats-exporter to support `arm64` and add some supply chain assurance (SBOM, SLSA).
+
 A Kubernetes DaemonSet application that addresses the regression in Kubernetes 1.34 where `kubelet_volume_stats_*` metrics are no longer exposed by the kubelet. This exporter retrieves volume statistics from the kubelet's `/stats/summary` API endpoint and exposes them in Prometheus format for backward compatibility.
 
 ## Problem Statement
